@@ -1,0 +1,6 @@
+<template name="groupsOfCourse">
+	Выбрать группу
+    {{#each groups}}
+    	<a href="{{pathFor 'eventsOfGroup'}}"><li id="{{_id}}">{{group_name}}</li></a>
+    {{/each}}
+</template>

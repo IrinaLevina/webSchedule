@@ -1,0 +1,20 @@
+<template name="addGroups">
+	<p>Add Groups</p>
+	<form class="add-group-form">
+	<select class="faculty-id">
+		{{#each faculties}}
+			<option value="{{_id}}">{{faculty_name}}</option>
+		{{/each}}
+	</select>
+	<select class="course-id">
+		{{#each courses}}
+			<option value="{{_id}}">{{course_name}}</option>
+		{{/each}}
+	</select>
+	<input type="text" class="group-number" placeholder="Номер группы">
+	<input type="submit" value="add group">
+	</form>
+	{{#each groups}}
+		<p>{{group_name}}</p>
+	{{/each}}
+</template>

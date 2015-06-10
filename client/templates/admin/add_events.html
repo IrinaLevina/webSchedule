@@ -1,0 +1,43 @@
+<template name="addEvents">
+	<p>Add Events</p>
+	<form class="add-event-form">
+	<select class="faculty-id">
+		{{#each faculties}}
+			<option value="{{_id}}">{{faculty_name}}</option>
+		{{/each}}
+	</select>
+	<select class="courses-id">
+		{{#each courses}}
+			<option value="{{_id}}">{{course_name}}</option>
+		{{/each}}
+	</select>
+	<select class="groups-id">
+		{{#each groups}}
+			<option value="{{_id}}">{{group_name}}</option>
+		{{/each}}
+	</select>
+	<br>
+	<input type="text" class="event-name" placeholder="Название события">
+	<textarea class="event-summary" plaseholder="Описание События"></textarea>
+	<input type="date" class="event-date"/>
+	<input type="time" class="event-time"/>
+	<input type="text" class="event-person" placeholder="Имя преподавателя"/>
+	<input type="text" class="event-place" placeholder="Место события"/> <!-- TODO: add map for selecting places-->
+
+	<select class="event-type" placeholder="Тип события">
+		<option value="1">Лекция</option>
+		<option value="2">Экзамен</option>
+		<option value="3">Практическое занятие</option>
+		<option value="4">Контрольная работа</option>
+		<option value="5">Зачет</option>
+		<option value="6">Семинар</option>
+		<option value="7">Коллоквиум</option>
+		<option value="8">Внеучебное занятие</option>
+	</select>
+
+	<input type="submit" value="add event">
+	</form>
+	{{#each events}}
+		<p>{{event_name}}</p>
+	{{/each}}
+</template>

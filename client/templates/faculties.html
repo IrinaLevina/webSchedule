@@ -1,0 +1,5 @@
+<template name="faculties">
+	{{#each faculties}}
+		<a href="{{pathFor 'coursesOfFaculty'}}"><li id="{{_id}}">{{faculty_name}}</li></a>
+	{{/each}}
+</template>

@@ -1,0 +1,9 @@
+<template name="coursesOfFaculty">
+	Выбрать курс:
+
+    {{#each courses}}
+		<a href="{{pathFor 'groupsOfCourse'}}"><li id="{{_id}}">{{course_name}}</li></a>
+	{{/each}}
+
+	{{someHelper}}
+</template>
