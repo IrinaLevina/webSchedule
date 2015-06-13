@@ -13,3 +13,7 @@ Meteor.publish('groups', function() {
 Meteor.publish('events', function() {
   return Events.find();
 });
+
+Meteor.publish('calendar', function () {
+	return Calendar.find();
+});
