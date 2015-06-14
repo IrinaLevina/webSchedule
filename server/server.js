@@ -15,5 +15,5 @@ Meteor.publish('events', function() {
 });
 
 Meteor.publish('calendar', function () {
-	return Calendar.find();
+  return Calendar.find();
 });

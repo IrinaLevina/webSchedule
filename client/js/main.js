@@ -2,8 +2,15 @@ if (Meteor.isClient) {
 
   Template.faculties.helpers({
     faculties: function () {
-      return Faculties.find({}).fetch();
+      if (Session.get("facultiesSearch")) {
+        return Session.get("facultiesSearch");
+      } else {
+        return Faculties.find({}).fetch();
+      }
+
+      
     }
+
   });
 
   Template.coursesOfFaculty.helpers({
@@ -28,12 +35,9 @@ if (Meteor.isClient) {
       var events = Router.current().data();
       return events;
     }
-  })
-
-  Template.body.events({
-    'change .faculty-select': function () {
-        console.log("here")
-    },
   });
 
+  Meteor.subscribe('calendar', function () {
+    Session.set('superCalendarReady', true);
+  });
 }
