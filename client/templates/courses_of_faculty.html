@@ -1,9 +1,9 @@
 <template name="coursesOfFaculty">
-	Выбрать курс:
-
-    {{#each courses}}
-		<a href="{{pathFor 'groupsOfCourse'}}"><p id="{{_id}}">{{course_name}}</p></a>
-	{{/each}}
-
+	<div class="page-caption">Выбрать курс:</div>
+	<div class="page-wrapper__link">
+		{{#each courses}}
+			<a class="main-link__i course-link" href="{{pathFor 'groupsOfCourse'}}"><p id="{{_id}}">{{course_name}}</p></a>
+		{{/each}}
+	</div>
 	{{someHelper}}
 </template>

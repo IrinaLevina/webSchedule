@@ -1,7 +1,10 @@
 <template name="faculties">
-	{{#each faculties}}
-		<a href="{{pathFor 'coursesOfFaculty'}}"><p id="{{_id}}">{{faculty_name}}</p></a>
-	{{/each}}
+	<input type="text" class="page-search faculty-search" id="search" placeholder="Введите факультет"/>
+	<div class="page-wrapper__link">
+		{{#each faculties}}
+			<a class="main-link__i faculty-link" href="{{pathFor 'coursesOfFaculty'}}"><p id="{{_id}}">{{faculty_name}}</p></a>
+		{{/each}}
+	</div>
  
-	<input type="text" class="faculty-search" id="search" placeholder="Введите факультет"/>
+
 </template>

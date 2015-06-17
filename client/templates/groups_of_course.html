@@ -1,6 +1,8 @@
 <template name="groupsOfCourse">
-	Выбрать группу
-    {{#each groups}}
-    	<a href="{{pathFor 'eventsOfGroup'}}"><li id="{{_id}}">{{group_name}}</li></a>
-    {{/each}}
+	<div class="page-caption">Выбрать группу:</div>
+		<div class="page-wrapper__link">
+			{{#each groups}}
+				<a class="main-link__i group-link" href="{{pathFor 'eventsOfGroup'}}"><li id="{{_id}}">{{group_name}}</li></a>
+			{{/each}}
+	</div>
 </template>
