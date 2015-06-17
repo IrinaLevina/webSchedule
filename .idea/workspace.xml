@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="534ed8a6-b6f5-4b29-83a4-bbf8f07d48ef" name="Default" comment="last changes">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app.css" afterPath="$PROJECT_DIR$/client/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/courses_of_faculty.html" afterPath="$PROJECT_DIR$/client/templates/courses_of_faculty.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/events_of_groups.html" afterPath="$PROJECT_DIR$/client/templates/events_of_groups.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/faculties.html" afterPath="$PROJECT_DIR$/client/templates/faculties.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/meteor_supercalendar-master/client/stylesheets/fullcalendar.css" afterPath="$PROJECT_DIR$/packages/meteor_supercalendar-master/client/stylesheets/fullcalendar.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/groups_of_course.html" afterPath="$PROJECT_DIR$/client/templates/groups_of_course.html" />
     </list>
     <ignored path="webSchedule.iws" />
@@ -34,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/client/templates/courses_of_faculty.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="238">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="30" />
+              <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -54,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/client/templates/groups_of_course.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="221">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="51" />
+              <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -63,8 +60,8 @@
       <file leaf-file-name="faculties.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/faculties.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="255">
+              <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -73,8 +70,8 @@
       <file leaf-file-name="app.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7513812" vertical-offset="323" max-vertical-offset="1258">
-              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+            <state vertical-scroll-proportion="-0.9097606" vertical-offset="715" max-vertical-offset="1258">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -83,7 +80,7 @@
       <file leaf-file-name="fullcalendar.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/meteor_supercalendar-master/client/stylesheets/fullcalendar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.892857" vertical-offset="8386" max-vertical-offset="10251">
+            <state vertical-scroll-proportion="-305.39285" vertical-offset="0" max-vertical-offset="10251">
               <caret line="503" column="186" selection-start-line="503" selection-start-column="186" selection-end-line="503" selection-end-column="186" />
               <folding />
             </state>
@@ -124,12 +121,12 @@
         <option value="$PROJECT_DIR$/client/js/calendar.js" />
         <option value="$PROJECT_DIR$/client/js/eventsCalendar.js" />
         <option value="$PROJECT_DIR$/client/templates/admin/add_groups.html" />
-        <option value="$PROJECT_DIR$/client/templates/groups_of_course.html" />
-        <option value="$PROJECT_DIR$/client/templates/courses_of_faculty.html" />
         <option value="$PROJECT_DIR$/client/templates/events_of_groups.html" />
         <option value="$PROJECT_DIR$/packages/meteor_supercalendar-master/client/stylesheets/fullcalendar.css" />
-        <option value="$PROJECT_DIR$/client/templates/faculties.html" />
         <option value="$PROJECT_DIR$/client/app.css" />
+        <option value="$PROJECT_DIR$/client/templates/courses_of_faculty.html" />
+        <option value="$PROJECT_DIR$/client/templates/groups_of_course.html" />
+        <option value="$PROJECT_DIR$/client/templates/faculties.html" />
       </list>
     </option>
   </component>
@@ -444,14 +441,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="1156">
-          <caret line="55" column="32" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.meteor/packages">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
@@ -772,14 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/courses_of_faculty.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="238">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/events_of_groups.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="238">
@@ -788,34 +769,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/meteor_supercalendar-master/client/stylesheets/fullcalendar.css">
+    <entry file="file://$PROJECT_DIR$/client/templates/groups_of_course.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.892857" vertical-offset="8386" max-vertical-offset="10251">
-          <caret line="503" column="186" selection-start-line="503" selection-start-column="186" selection-end-line="503" selection-end-column="186" />
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="221">
+          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/groups_of_course.html">
+    <entry file="file://$PROJECT_DIR$/client/templates/courses_of_faculty.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="221">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="51" />
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="238">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/faculties.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="255">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/meteor_supercalendar-master/client/stylesheets/fullcalendar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-305.39285" vertical-offset="0" max-vertical-offset="10251">
+          <caret line="503" column="186" selection-start-line="503" selection-start-column="186" selection-end-line="503" selection-end-column="186" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7513812" vertical-offset="323" max-vertical-offset="1258">
-          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        <state vertical-scroll-proportion="-0.9097606" vertical-offset="715" max-vertical-offset="1258">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding />
         </state>
       </provider>
