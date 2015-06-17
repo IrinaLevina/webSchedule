@@ -1,0 +1,5 @@
+/*calendar*/
+.calendar-wrapper{margin: 15px; font: 13px/14px Arial, Helvetica, sans-serif; color: #040404; font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+	.fc-header-title h2{font-size: 20px; font-weight: bold; color: #2B3B6A;}
+
+.fc-day{font-size: 16px;}
