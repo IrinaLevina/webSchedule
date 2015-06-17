@@ -1,10 +1,9 @@
 <template name="faculties">
+	<div class="page-caption">Выбрать факультет:</div>
 	<input type="text" class="page-search faculty-search" id="search" placeholder="Введите факультет"/>
 	<div class="page-wrapper__link">
 		{{#each faculties}}
-			<a class="main-link__i faculty-link" href="{{pathFor 'coursesOfFaculty'}}"><p id="{{_id}}">{{faculty_name}}</p></a>
+			<a class="main-link__i faculty-link" href="{{pathFor 'coursesOfFaculty'}}"><div class="link-name_layer"><p id="{{_id}}">{{faculty_name}}</p></div></a>
 		{{/each}}
 	</div>
- 
-
 </template>

@@ -10,7 +10,7 @@
 	text-align: left;
 	}
 
-thead{background-color: #0d87e9; color: #fff; text-transform: uppercase;}
+thead{color: #666;text-transform: uppercase;}
 .fc table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -211,7 +211,6 @@ html .fc,
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
 	color: #fff;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 	-webkit-background-size: 200% 200%;
 	background-size: 200%;
@@ -501,7 +500,9 @@ table.fc-border-separate {
 .fc-widget-header .fc-agenda-divider-inner {
 	background: #eee;
 	}
-	
+
+.fc-border-separate .fc-day-header {border-top-width: 0!important;	border-left-width: 0!important;	border-right-width: 0!important;border-bottom-width: 2px!important;	font-weight: bold; font-size: 15px;}
+
 /* slot rows */
 	
 .fc-agenda-slots th {
