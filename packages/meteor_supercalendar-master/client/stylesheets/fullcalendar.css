@@ -23,7 +23,7 @@ html .fc,
 	
 .fc td,
 .fc th {
-	padding: 5px;
+	padding: 5px 0;
 	vertical-align: top;
 	}
 
@@ -94,6 +94,7 @@ html .fc,
 .fc-header .fc-state-active,
 .fc-header .ui-state-active {
 	z-index: 4;
+	cursor: default;
 	}
 	
 	
@@ -401,7 +402,7 @@ table.fc-border-separate {
 	
 .fc-grid .fc-day-number {
 	float: right;
-	padding: 0 2px;
+	padding: 4px 5px 3px;
 	}
 	
 .fc-grid .fc-other-month .fc-day-number {
@@ -414,7 +415,7 @@ table.fc-border-separate {
 	
 .fc-grid .fc-day-content {
 	clear: both;
-	padding: 2px 2px 1px; /* distance between events and day edges */
+	padding: 2px 0 1px; /* distance between events and day edges */
 	}
 	
 /* event styles */

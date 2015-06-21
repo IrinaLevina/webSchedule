@@ -8,5 +8,10 @@ Template.eventsOfGroup.events({
 });
 
 function showEventInfo(eventInfo) {
-    console.log(eventInfo);
+//    popup here
+	$(eventInfo).each(function(k,v) {
+		$('.page-popup.event-popup').fadeIn().append('<div class="page-popup-content"><div class="page-popup-caption">' + v.event_name + '</div>')
+	});
+	console.log(eventInfo);
+
 }
