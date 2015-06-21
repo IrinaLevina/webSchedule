@@ -59,11 +59,11 @@
       <file leaf-file-name="eventsRender.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/js/eventsRender.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6590258" vertical-offset="628" max-vertical-offset="1445">
-              <caret line="64" column="67" selection-start-line="64" selection-start-column="67" selection-end-line="64" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.26934096" vertical-offset="696" max-vertical-offset="1479">
+              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1434893053883" expanded="true" signature="1837:1854" placeholder="..." />
+                <marker date="1434893267085" expanded="true" signature="1891:1908" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -570,7 +570,11 @@
       <created>1434892559267</created>
       <updated>1434892559267</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="events view&#10;&#10;add type of events on month and days views">
+      <created>1434893208556</created>
+      <updated>1434893208556</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -636,7 +640,8 @@
     </option>
     <MESSAGE value="last changes" />
     <MESSAGE value="events view&#10;&#10;add output events on month and days views" />
-    <option name="LAST_COMMIT_MESSAGE" value="events view&#10;&#10;add output events on month and days views" />
+    <MESSAGE value="events view&#10;&#10;add type of events on month and days views" />
+    <option name="LAST_COMMIT_MESSAGE" value="events view&#10;&#10;add type of events on month and days views" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1033,11 +1038,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/eventsRender.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6590258" vertical-offset="628" max-vertical-offset="1445">
-          <caret line="64" column="67" selection-start-line="64" selection-start-column="67" selection-end-line="64" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.26934096" vertical-offset="696" max-vertical-offset="1479">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1434893053883" expanded="true" signature="1837:1854" placeholder="..." />
+            <marker date="1434893267085" expanded="true" signature="1891:1908" placeholder="..." />
           </folding>
         </state>
       </provider>
