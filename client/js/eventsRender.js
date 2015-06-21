@@ -57,7 +57,7 @@ function createEventForWeek(eventsList) {
     $(eventsList).each(function(k,v){
         var position = $('.fc-agenda-days .fc-widget-content:not(.fc-last)[data-date='+ v.event_date+']').index()*210;
         var timeBlock = checkEventTime(v.event_time);
-        var html = "<div class='event-for-week'>" +
+        var html = "<div class='event-for-week' data-id='"+ v._id+"'>" +
             v.event_name +
         "</div>";
         timeBlock.find('.fc-widget-content').html("").append(html);
@@ -74,3 +74,4 @@ function checkEventTime(time) {
     }
     return timeBlock;
 }
+
