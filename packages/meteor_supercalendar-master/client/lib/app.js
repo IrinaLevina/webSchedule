@@ -54,7 +54,7 @@ SuperCalendar = {
         header: {
           left: 'prev,next today',
           center: 'title',
-          right: 'month,agendaWeek,agendaDay'
+          right: 'month, agendaDay'
         },
         editable: false,
         events: entries,

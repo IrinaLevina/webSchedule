@@ -2974,7 +2974,7 @@ function AgendaView(element, calendar, viewName) {
 		for (i=0; d < maxd; i++) {
 			minutes = d.getMinutes();
 			s +=
-				"<tr class='fc-slot" + i + ' ' + (!minutes ? '' : 'fc-minor') + "'>" +
+				"<tr class='fc-slot" + parseInt(i/2) + ' ' + (!minutes ? '' : 'fc-minor') + "'>" +
 				"<th class='fc-agenda-axis " + headerClass + "'>" +
 				((!slotNormal || !minutes) ? formatDate(d, opt('axisFormat')) : '&nbsp;') +
 				"</th>" +
@@ -3116,9 +3116,10 @@ function AgendaView(element, calendar, viewName) {
 			}
 
 			cellHTML =
-				"<td class='" + classNames.join(' ') + "'>" +
+				"<td class='" + classNames.join(' ') + "'" +
+                    "data-date='" + formatDate(date, 'yyyy-MM-dd') + "'>" +
 				"<div>" +
-				"<div class='fc-day-content'>" +
+				"<div class='fc-day-content'>"+
 				"<div style='position:relative'>&nbsp;</div>" +
 				"</div>" +
 				"</div>" +
