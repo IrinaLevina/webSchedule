@@ -1,6 +1,6 @@
 <template name="addEvents">
 	<p>Add Events</p>
-	<form class="add-event-form">
+	<form class="add-event-form admin-form">
 	<select class="faculty-id">
 		{{#each faculties}}
 			<option value="{{_id}}">{{faculty_name}}</option>
@@ -16,7 +16,7 @@
 			<option value="{{_id}}">{{group_name}}</option>
 		{{/each}}
 	</select>
-	<br>
+	<div class="clearfix"></div>
 	<input type="text" class="event-name" placeholder="Название события">
 	<textarea class="event-summary" plaseholder="Описание События"></textarea>
 	<input type="date" class="event-date"/>
@@ -34,7 +34,7 @@
 		<option value="7">Коллоквиум</option>
 		<option value="8">Внеучебное занятие</option>
 	</select>
-
+    <div class="clearfix"></div>
 	<input type="submit" value="add event">
 	</form>
 	{{#each events}}

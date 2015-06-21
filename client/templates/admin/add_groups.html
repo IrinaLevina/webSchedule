@@ -1,6 +1,6 @@
 <template name="addGroups">
-	<p>Добавить группы</p>
-	<form class="add-group-form">
+	<h2>Добавить группы</h2>
+	<form class="add-group-form admin-form">
 	<select class="faculty-id">
 		{{#each faculties}}
 			<option value="{{_id}}">{{faculty_name}}</option>
@@ -11,6 +11,7 @@
 			<option value="{{_id}}">{{course_name}}</option>
 		{{/each}}
 	</select>
+    <div class="clearfix"></div>
 	<input type="text" class="group-number" placeholder="Номер группы">
 	<input type="submit" value="add group">
 	</form>
