@@ -211,24 +211,15 @@ html{background-color: #F9F9F9;}
 			box-sizing: border-box;
 		}
 		input[type="checkbox"]:checked:after{background-color: #2196f3;	border-color: #2196f3;}
-	.teacher-filter {
-		float: left;
-	}
-	.teacher-filter {
-		float: left;
-	}
-
-	.type-filter {
-		float: left;
-	}
-
+	.teacher-filter {display: inline-block;vertical-align: top;}
+	.type-filter {display: inline-block;vertical-align: top;}
 	.filter-wrapper {
 		margin: 0 0 30px;
 		display: block;
 	}
 	.clearfix {clear: both; float: none;}
 
-	.filter-button {float: left;margin: 0 20px;padding: 6px 15px;height: 37px;font-size: 14px;color: #666;background-color: #fff;border-color: #eee;border-right: none;border-bottom: none;border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+	.filter-button {display: inline-block;vertical-align: top;margin: 0 20px;padding: 6px 15px;height: 37px;font-size: 14px;color: #666;background-color: #fff;border-color: #eee;border-right: none;border-bottom: none;border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
 		-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 		-webkit-transition: all 0.2s;
 		-o-transition: all 0.2s;
