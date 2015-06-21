@@ -3,6 +3,58 @@
 		<!--{{#each events}}-->
 			<!--{{event_name}}-->
 		<!--{{/each}}-->
+    <div class="filter-wrapper">
+        <div class="teacher-filter">
+            <input type="text" class="teacher-input" placeholder="Преподаватель"/>
+        </div>
+        <div class="type-filter">
+            <dl class="dropdown">
+
+                <dt>
+                <a href="#">
+                  <span class="hida">Тип события: </span>
+                  <p class="multiSel"></p>
+                </a>
+                </dt>
+
+                <dd>
+                    <div class="mutliSelect">
+                        <ul>
+                            <li>
+                                <label><input type="checkbox" value="1" /><span>Лекция</span></label></li>
+                            <li>
+                                <label><input type="checkbox" value="2" /><span>Экзамен</span></label></li>
+                            <li>
+                                <label><input type="checkbox" value="3" /><span>Практическое занятие</span></label></li>
+                            <li>
+                                <label><input type="checkbox" value="4" /><span>Контрольная работа</span></label></li>
+                            <li>
+                                <label><input type="checkbox" value="5" /><span>Зачет</span></label></li>
+                            <li>
+                                <label><input type="checkbox" value="6" /><span>Семинар</span></label></li>
+                            <li>
+                                <label><input type="checkbox" value="7" /><span>Коллоквиум</span></label></li>
+                            <li>
+                                <label><input type="checkbox" value="8" /><span>Внеучебное занятие</span></label></li>
+                        </ul>
+                    </div>
+                </dd>
+
+            </dl>
+        </div>
+        <div class="filter-button filter-btn">ИСКАТЬ</div>
+        <!--<select class="event-type" placeholder="Тип события">
+            <option value="1">Лекция</option>
+            <option value="2">Экзамен</option>
+            <option value="3">Практическое занятие</option>
+            <option value="4">Контрольная работа</option>
+            <option value="5">Зачет</option>
+            <option value="6">Семинар</option>
+            <option value="7">Коллоквиум</option>
+            <option value="8">Внеучебное занятие</option>
+        </select>-->
+    </div>
+    <div class="clearfix"></div>
 	<div class="calendar-wrapper">
 		{{>calendar}}
 	</div>
