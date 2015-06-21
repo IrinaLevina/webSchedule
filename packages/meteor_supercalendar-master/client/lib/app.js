@@ -68,10 +68,10 @@ SuperCalendar = {
           });*/
         },
         eventClick: function (date, e, view) {
-          return SuperCalendar.events.onEventClick.call(this, e, self, {
+          /*return SuperCalendar.events.onEventClick.call(this, e, self, {
             date: date,
             view: view
-          });
+          });*/
         }
       });
     });

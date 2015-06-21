@@ -2,13 +2,14 @@
 Events.find({
     'event_date': { $lt: "2015-06-11" }
 }).fetch()*/
-
+var currentGroup;
 Template.eventsOfGroup.rendered = function() {
      countEventsDate("month");
      setTimeout(function(){
+         currentGroup = Router.current().data().fetch()[0].group_id;
+         console.log(currentGroup);
          $(".fc-button-month").click();
      }, 500);
-
 };
 
 Template.eventsOfGroup.events({
@@ -19,7 +20,6 @@ Template.eventsOfGroup.events({
             countEventsDate("week");
         }
     }
-    'click .'
 });
 
 function countEventsDate(selector) {
@@ -35,7 +35,8 @@ function countEventsDate(selector) {
 
 function eventsRender(startDate, endDate, selector) {
     var eventsList = Events.find({
-        'event_date': { $gte: startDate, $lte: endDate}
+        'event_date': { $gte: startDate, $lte: endDate},
+        'group_id' : currentGroup
     }).fetch();
 
     if (selector == "month") {
