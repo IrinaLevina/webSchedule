@@ -7,13 +7,20 @@ Template.eventsOfGroup.rendered = function() {
      countEventsDate("month");
      setTimeout(function(){
          currentGroup = Router.current().data().fetch()[0].group_id;
-         console.log(currentGroup);
          $(".fc-button-month").click();
      }, 500);
+     multyselect();
 };
 
 Template.eventsOfGroup.events({
     'click .fc-button': function() {
+        if ($('.fc-state-active').hasClass('fc-button-month')) {
+            countEventsDate("month");
+        } else if ($('.fc-state-active').hasClass('fc-button-agendaDay')){
+            countEventsDate("week");
+        }
+    },
+    'click .filter-btn': function(){
         if ($('.fc-state-active').hasClass('fc-button-month')) {
             countEventsDate("month");
         } else if ($('.fc-state-active').hasClass('fc-button-agendaDay')){
@@ -34,17 +41,27 @@ function countEventsDate(selector) {
 }
 
 function eventsRender(startDate, endDate, selector) {
-    var eventsList = Events.find({
-        'event_date': { $gte: startDate, $lte: endDate},
-        'group_id' : currentGroup
-    }).fetch();
+    var filters = {};
+    filters.event_date = { $gte: startDate, $lte: endDate};
+    filters.group_id =  currentGroup;
+    if ($('.teacher-input').val().length != 0){
+        filters.event_person = {$regex: $('.teacher-input').val(), $options: 'i'}
+    }
+    if ($('.mutliSelect input[type=checkbox]:checked').length != 0) {
+        var searchArray = [];
+        $($('.mutliSelect input[type=checkbox]:checked')).each(function(k,v){
+            searchArray.push($(v).val());
+        });
+        filters.event_type = { $in: searchArray };
+    }
+    console.log(filters);
+    var eventsList = Events.find(filters).fetch();
 
     if (selector == "month") {
        createEventForMonth(eventsList)
     } else if (selector == "week" ) {
         createEventForWeek(eventsList)
     }
-    console.log(eventsList)
 }
 
 function createEventForMonth(eventsList) {
@@ -79,4 +96,46 @@ function checkEventTime(time) {
     }
     return timeBlock;
 }
+function multyselect () {
+    $(document).ready(function () {
+        $(".dropdown dt a").on('click', function () {
+            $(".dropdown dd ul").slideToggle('fast');
+        });
 
+        $(".dropdown dd ul li a").on('click', function () {
+            $(".dropdown dd ul").hide();
+        });
+
+        function getSelectedValue(id) {
+            return $("#" + id).find("dt a span.value").html();
+        }
+
+        $(document).bind('click', function (e) {
+            var $clicked = $(e.target);
+            if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+        });
+
+
+        $('.mutliSelect input[type="checkbox"]').on('click', function () {
+
+            var title = $(this).parent().find('span').text(),
+                value = $(this).val();
+                title += ",";
+
+            if ($(this).is(':checked')) {
+                var html = '<span title="' + value + '">' + title + '</span>';
+                $('.multiSel').append(html);
+                $(".hida").hide();
+            }
+            else {
+                $('span[title="' + value + '"]').remove();
+                var ret = $(".hida");
+                $('.dropdown dt a').append(ret);
+                if ($('.mutliSelect input[type="checkbox"]:checked').length == 0){
+                    $(".hida").text("Тип события:").show();
+                }
+            }
+
+        });
+    });
+}
