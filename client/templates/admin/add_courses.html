@@ -1,11 +1,12 @@
 <template name="addCourses">
-	<p>Add Courses</p>
-	<form class="add-course-form">
+	<h2>Add Courses</h2>
+	<form class="add-course-form admin-form">
 	<select class="faculty-id">
 		{{#each faculties}}
 			<option value="{{_id}}">{{faculty_name}}</option>
 		{{/each}}
 	</select>
+    <div class="clearfix"></div>
 	<input type="text" class="course-number" placeholder="Номер курса">
 	<input type="submit" value="add courses">
 	</form>

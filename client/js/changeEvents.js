@@ -30,7 +30,7 @@ Template.changeEvents.events({
     'submit .add-event-form': function(e){
         e.preventDefault();
 
-       /* Events.update($('form').attr('data-id'),{$set: {
+        Events.update($('form').attr('data-id'),{$set: {
             group_id: $('.groups-id').val(),
             event_name: $('.event-name').val(),
             event_summury: $('.event-summary').val(),
@@ -39,8 +39,8 @@ Template.changeEvents.events({
             event_person: $('.event-person').val(),
             event_place: $('.event-place').val(),
             event_type: $('.event-type').val()
-        }});*/
-        Events.insert({
+        }});
+       /* Events.insert({
             group_id: $('.groups-id').val(),
             event_name: $('.event-name').val(),
             event_summury: $('.event-summary').val(),
@@ -49,7 +49,7 @@ Template.changeEvents.events({
             event_person: $('.event-person').val(),
             event_place: $('.event-place').val(),
             event_type: $('.event-type').val()
-        });
+        });*/
             $('.event-name').val("");
             $('.event-summary').val("");
             $('.event-date').val("");
