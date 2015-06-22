@@ -6,7 +6,7 @@ html{background-color: #F9F9F9;}
 	.calendar-wrapper{margin: 15px; font: 13px/14px "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #040404; font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;}
 		.fc-header-title h2{margin: 10px 0 25px;font-size: 28px; color: #444;text-align: center;}
 	.fc-day{font-size: 16px;}
-	.event-for-week{padding: 6px 4px;text-transform: uppercase; font-size: 12px;line-height: 14px;border-bottom: 1px solid #f0f0f0;
+	.event-for-week{padding: 6px 4px;text-transform: uppercase; position: relative; background-color: #fff; font-size: 12px;line-height: 14px;border-bottom: 1px solid #f0f0f0;
 		-webkit-transition: all .2s;
 		-moz-transition: all .2s;
 		-ms-transition: all .2s;
@@ -23,32 +23,23 @@ html{background-color: #F9F9F9;}
 		event type 7 - Коллоквиум
 		event type 8 - Внеучебное занятие
 		*/
-	[data-type="1"]{
-		/*background-color: #CCF7CC;*/
-		background-color: #dff0d8;
-	}
-	[data-type="2"]{
-		/*background-color: #FFB4B4;*/
-		background-color: #FCCED0;
-	}
-	[data-type="3"]{
-		background-color: #CAE0F5;
-	}
-	[data-type="4"]{
-		background-color: #EDC8E9;
-	}
-	[data-type="5"]{
-		background-color: #ffe0b2;
-	}
-	[data-type="6"]{
-		background-color: #C8EDE6;
-	}
-	[data-type="7"]{
-		background-color: #DBDFE3;
-	}
-	[data-type="8"]{
-		background-color: #FDFFBD;
-	}
+.event-for-week:before {content: '';position: absolute;top: 0;right: 0;width: 7px;height: 100%;}
+	.event-for-week[data-type="1"]:before{/*background-color: #CCF7CC;*/background-color: #dff0d8;}
+	.event-for-week[data-type="2"]:before{/*background-color: #FFB4B4;*/	background-color: #FCCED0;}
+	.event-for-week[data-type="3"]:before{background-color: #CAE0F5;}
+	.event-for-week[data-type="4"]:before{background-color: #EDC8E9;}
+	.event-for-week[data-type="5"]:before{background-color: #ffe0b2;}
+	.event-for-week[data-type="6"]:before{background-color: #C8EDE6;}
+	.event-for-week[data-type="7"]:before{background-color: #DBDFE3;}
+	.event-for-week[data-type="8"]:before{background-color: #FDFFBD;}
+	.event-type-circle[data-type="1"]{/*background-color: #CCF7CC;*/background-color: #dff0d8;}
+	.event-type-circle[data-type="2"]{/*background-color: #FFB4B4;*/	background-color: #FCCED0;}
+	.event-type-circle[data-type="3"]{background-color: #CAE0F5;}
+	.event-type-circle[data-type="4"]{background-color: #EDC8E9;}
+	.event-type-circle[data-type="5"]{background-color: #ffe0b2;}
+	.event-type-circle[data-type="6"]{background-color: #C8EDE6;}
+	.event-type-circle[data-type="7"]{background-color: #DBDFE3;}
+	.event-type-circle[data-type="8"]{background-color: #FDFFBD;}
 	.event-for-week:hover{cursor: pointer; opacity: .85;}
 	/*popup event*/
 	.page-popup{position: fixed; width: 100%; height: 100%; background: rgba(26, 26, 26, 0.6); z-index: 10; top: 0; left: 0;font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #666;}
