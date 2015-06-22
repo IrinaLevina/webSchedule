@@ -133,7 +133,7 @@ function multyselect () {
                 var ret = $(".hida");
                 $('.dropdown dt a').append(ret);
                 if ($('.mutliSelect input[type="checkbox"]:checked').length == 0){
-                    $(".hida").text("Тип события:").show();
+                    $(".hida").text("Тип события").show();
                 }
             }
 

@@ -172,6 +172,8 @@ html{background-color: #F9F9F9;}
 		-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
 		-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;}
+	.page-form.page-select{margin: 0;}
+	.page-form.teacher-input{margin: 0;}
 	.type-filter{ width: 30%; min-width: 200px; max-width: 500px;}
 	.dropdown dd, .dropdown dt {margin:0;padding:0;}
 	.dropdown ul {margin: -1px 0 0;}
@@ -179,10 +181,13 @@ html{background-color: #F9F9F9;}
 		.dropdown a, .dropdown a:visited {color:#040404;text-decoration:none;outline:none;}
 		.dropdown dt a {display:block; overflow: hidden;}
 			.dropdown dt a span, .multiSel span {padding: 0 3px 0 0;cursor:pointer;display:inline-block;color: #928F8F;	}
+		.mutliSelect{  position: absolute;left: 0;right: 0;width: 100%;}
 		.multiSel span {color: #040404!important; font-size: 12px;}
 		.mutliSelect li {margin: 5px 0; font-size: 14px;}
-	.dropdown dd ul {display:none; padding: 4px 5px; left: 20px;top: 2px; border:0; color: #040404;
-        background: #fff; position: absolute;width: 82%;/*width: 30%;*/min-width: 200px;max-width: 500px;list-style: none;}/*TODO: change width*/
+	.dropdown dd ul {display:none; padding: 4px 5px; left: 0;top: 2px; border:0; color: #040404; background: #fff; position: absolute;width: 100%; list-style: none;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;}
 		.dropdown span.value {display:none;}
 		.dropdown dd ul li a {padding:5px;display:block;}
 			.dropdown dd ul li a:hover {background-color:#fff;}
@@ -212,8 +217,8 @@ html{background-color: #F9F9F9;}
 			box-sizing: border-box;
 		}
 		input[type="checkbox"]:checked:after{background-color: #2196f3;	border-color: #2196f3;}
-	.teacher-filter {display: inline-block;vertical-align: top;}
-	.type-filter {display: inline-block;vertical-align: top;}
+	.teacher-filter {margin: 0 20px; display: inline-block;vertical-align: top;}
+	.type-filter {margin: 0 20px; display: inline-block;vertical-align: top;}
 	.filter-wrapper {
 		margin: 0 0 30px;
 		display: block;
