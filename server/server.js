@@ -17,3 +17,6 @@ Meteor.publish('events', function() {
 Meteor.publish('calendar', function () {
   return Calendar.find();
 });
+Meteor.publish('teacher', function () {
+  return Teachers.find();
+});
