@@ -1741,7 +1741,7 @@ function vborders(element) {
 function setMinHeight(element, height) {
 	height = (typeof height == 'number' ? height + 'px' : height);
 	element.each(function(i, _element) {
-		_element.style.cssText += ';min-height:110px' + ';_height:' + height;
+		_element.style.cssText += ';min-height:60px' + ';_height:' + height;
 		// why can't we just use .css() ? i forget
 	});
 }
