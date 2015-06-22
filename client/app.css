@@ -33,7 +33,7 @@ html{background-color: #F9F9F9;}
 	.event-for-week[data-type="7"]:before{background-color: #DBDFE3;}
 	.event-for-week[data-type="8"]:before{background-color: #FDFFBD;}
 	.event-type-circle[data-type="1"]{/*background-color: #CCF7CC;*/background-color: #dff0d8;}
-	.event-type-circle[data-type="2"]{/*background-color: #FFB4B4;*/	background-color: #FCCED0;}
+	.event-type-circle[data-type="2"]{/*background-color: #FFB4B4;*/background-color: #FCCED0;}
 	.event-type-circle[data-type="3"]{background-color: #CAE0F5;}
 	.event-type-circle[data-type="4"]{background-color: #EDC8E9;}
 	.event-type-circle[data-type="5"]{background-color: #ffe0b2;}
