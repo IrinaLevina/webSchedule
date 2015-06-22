@@ -163,7 +163,7 @@ html{background-color: #F9F9F9;}
 
 
     /*events filter*/
-	.page-form{padding: 4px 5px; margin: 0 20px; width: 30%; min-width: 200px; max-width: 500px;display: block; border: none; font-size: 16px;line-height: 1.846;color: #666;
+	.page-form{padding: 4px 5px; margin: 0 20px; /*width: 30%;*/ width: inherit; min-width: 200px; max-width: 500px;display: block; border: none; font-size: 16px;line-height: 1.846;color: #666;
 		-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
 		-webkit-appearance: none;
 		-webkit-box-shadow: inset 0 -1px 0 #dddddd;
@@ -181,7 +181,8 @@ html{background-color: #F9F9F9;}
 			.dropdown dt a span, .multiSel span {padding: 0 3px 0 0;cursor:pointer;display:inline-block;color: #928F8F;	}
 		.multiSel span {color: #040404!important; font-size: 12px;}
 		.mutliSelect li {margin: 5px 0; font-size: 14px;}
-	.dropdown dd ul {display:none; padding: 4px 5px; left: 20px;top: 2px; border:0; color: #040404; background: #fff; position: absolute;width: 30%;min-width: 200px;max-width: 500px;list-style: none;height: 100px;overflow: auto;}
+	.dropdown dd ul {display:none; padding: 4px 5px; left: 20px;top: 2px; border:0; color: #040404;
+        background: #fff; position: absolute;width: 89%;/*width: 30%;*/min-width: 200px;max-width: 500px;list-style: none;height: 100px;overflow: auto;}/*TODO: change width*/
 		.dropdown span.value {display:none;}
 		.dropdown dd ul li a {padding:5px;display:block;}
 			.dropdown dd ul li a:hover {background-color:#fff;}
