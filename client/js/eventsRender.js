@@ -4,6 +4,7 @@ Events.find({
 }).fetch()*/
 var currentGroup;
 Template.eventsOfGroup.rendered = function() {
+     Meteor.typeahead.inject();
      countEventsDate("month");
      setTimeout(function(){
          currentGroup = Router.current().data().fetch()[0].group_id;
@@ -44,8 +45,8 @@ function eventsRender(startDate, endDate, selector) {
     var filters = {};
     filters.event_date = { $gte: startDate, $lte: endDate};
     filters.group_id =  currentGroup;
-    if ($('.teacher-input').val().length != 0){
-        filters.event_person = {$regex: $('.teacher-input').val(), $options: 'i'}
+    if ($('.teacher-input:last').val().length != 0){
+        filters.event_person = {$regex: $('.teacher-input:last').val(), $options: 'i'}
     }
     if ($('.mutliSelect input[type=checkbox]:checked').length != 0) {
         var searchArray = [];

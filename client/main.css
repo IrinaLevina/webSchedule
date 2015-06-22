@@ -74,4 +74,15 @@ h2 {
     font-size: 18px;
     margin: 10px 10px 0;
 }
+.tt-menu {
+    left: 20px!important;
+    background-color: #fff;
+    width: 200px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.tt-suggestion {
+    cursor: pointer;
+}
 /*end admin form*/

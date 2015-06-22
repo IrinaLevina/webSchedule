@@ -22,3 +22,9 @@ function hideEventInfo(){
 	$('.page-popup.event-popup').fadeOut();
 	$('.page-popup-content').remove();
 }
+
+Template.eventsOfGroup.helpers({
+  teachers: function() {
+    return Teachers.find().fetch().map(function(it){ return it.name; });
+  }
+});

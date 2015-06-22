@@ -6,8 +6,11 @@
 		<!--{{/each}}-->
     <div class="filter-wrapper">
         <div class="teacher-filter">
-            <input type="text" class="teacher-input page-form" placeholder="Преподаватель"/>
+            <!--<input type="text" class="" placeholder="Преподаватель"/>-->
+            <input class="form-control typeahead teacher-input page-form" type="text" placeholder="Преподаватель" autocomplete="off" spellcheck="off" data-source="teachers"/>
         </div>
+
+
         <div class="type-filter">
             <dl class="dropdown">
                 <dt>
