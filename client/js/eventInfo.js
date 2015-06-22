@@ -32,7 +32,7 @@ function showEventInfo(eventInfo) {
 		}else if(v.event_type == 8){
 			eventType = 'Внеучебное занятие'
 		}
-		$('.page-popup.event-popup').fadeIn().append('<div class="page-popup-content"><div class="close-button popup-close">×</div><h4>'+ v.event_time + ' - ' + v.event_name + '</h4><p><span class="popup-part">Преподаватель: </span><span class="page-text-bold popup-part _right">' + v.event_person + '</span></p><p><span class="popup-part">Место проведения: </span><span class="popup-part _right page-text-bold">' + v.event_place + ' каб.</span></p><p><span class="popup-part">Описание: </span><span class="popup-part _right page-text-bold">' + v.event_summury + '</span></p><p><span class="popup-part">Тип: </span><span class="popup-part _right page-text-bold"><span class="event-type-circle" data-type="'+ v.event_type +'"></span>'+eventType+'</span></p></div>');
+		$('.page-popup.event-popup').fadeIn().append('<div class="page-popup-content"><div class="close-button popup-close">×</div><h4>'+ v.event_time + ' - ' + v.event_name + '</h4><p><span class="popup-part">Преподаватель: </span><span class="page-text-bold popup-part _right">' + v.event_person + '</span></p><p><span class="popup-part">Место проведения: </span><span class="popup-part _right page-text-bold">' + v.event_place + ' каб.</span></p><p><span class="popup-part">Описание: </span><span class="popup-part _right page-text-bold">' + v.event_summury + '</span></p><p><span class="popup-part">Тип: </span><span class="popup-part _right page-text-bold"><span class="event-type-circle event-type-bg" data-type="'+ v.event_type +'"></span>'+eventType+'</span></p></div>');
 	});
 //	console.log(eventInfo);
 

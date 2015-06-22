@@ -80,7 +80,7 @@ function createEventForWeek(eventsList) {
     $(eventsList).each(function(k,v){
         var position = $('.fc-agenda-days .fc-widget-content:not(.fc-last)[data-date='+ v.event_date+']').index()*210;
         var timeBlock = checkEventTime(v.event_time);
-        var html = "<div class='event-for-week' data-id='"+ v._id+"' data-type='"+ v.event_type+"'>"
+        var html = "<div class='event-for-week event-type-bg' data-id='"+ v._id+"' data-type='"+ v.event_type+"'>"
             + v.event_name + ', '+ v.event_person +',  '+ v.event_place +'&nbsp;каб'+
         "</div>";
         timeBlock.find('.fc-widget-content').html("").append(html);
