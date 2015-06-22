@@ -1,5 +1,5 @@
 /*global styles*/
-html{background-color: #F9F9F9;}
+html{background-color: #F9F9F9; max-width: 1200px;	margin: 0 auto!important;}
 	body{font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;}
 
 /*calendar*/
