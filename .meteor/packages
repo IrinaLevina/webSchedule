@@ -11,3 +11,6 @@ iron:router
 sacha:spin
 supercalendar
 sergeyt:typeahead
+accounts-ui
+accounts-password
+alanning:roles

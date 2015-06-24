@@ -1,3 +1,4 @@
+
 Meteor.publish('faculties', function() {
   return Faculties.find();
 });
@@ -20,3 +21,14 @@ Meteor.publish('calendar', function () {
 Meteor.publish('teacher', function () {
   return Teachers.find();
 });
+
+if(Meteor.is_server) {
+
+  Roles.allow({
+    'update': function (userId,doc) {
+	  console.log("eeee")
+      return true; 
+    }
+  });
+
+}

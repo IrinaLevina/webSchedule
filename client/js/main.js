@@ -7,10 +7,8 @@ if (Meteor.isClient) {
       } else {
         return Faculties.find({}).fetch();
       }
-
-      
     }
-
+     
   });
 
   Template.coursesOfFaculty.helpers({
@@ -38,6 +36,8 @@ if (Meteor.isClient) {
   });
 
   Meteor.subscribe('calendar', function () {
+    
     Session.set('superCalendarReady', true);
   });
 }
+
