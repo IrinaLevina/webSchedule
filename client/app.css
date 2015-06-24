@@ -43,7 +43,7 @@ html{background-color: #F9F9F9; max-width: 1600px;	margin: 0 auto!important;}
 	.event-for-week:hover{cursor: pointer; opacity: .85;}
 	/*popup event*/
 	.page-popup{position: fixed; width: 100%; height: 100%; background: rgba(26, 26, 26, 0.6); z-index: 10; top: 0; left: 0;font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #666;}
-		.page-popup.event-popup{}
+		.page-popup.event-popup{color: #454545;}
 			.page-popup-content{margin: 10% auto 0;padding: 20px 20px;width: 50%;min-width: 700px;max-width: 1000px;background-color: #fff; border-radius: 3px;
 				border: 1px solid transparent;
 				-webkit-transition: all .3s;
@@ -54,7 +54,7 @@ html{background-color: #F9F9F9; max-width: 1600px;	margin: 0 auto!important;}
 				-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
 				box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);}
 			.page-popup-content h4{padding: 0 0 20px 5px; font-size: 25px; font-weight: bold;}
-			.page-popup-content p{padding: 4px 5px;margin: 5px 0;display: block; font-size: 18px;line-height: 27px;border-bottom: 1px solid rgba(33, 150, 243, 0.31);background-color: #EAF5FD;width: 100%;}
+			.page-popup-content p{padding: 4px 5px;margin: 5px 0;display: block; font-size: 18px;line-height: 27px;background-color: rgba(242, 248, 252, 1); width: 100%;}
 				.page-popup._show .page-popup-content{margin: 0 auto 0;}
 		.default-button{text-transform: uppercase;border: 1px solid transparent;border-right: none;border-bottom: none;color: #fff;background-color: #2196f3;border-color: transparent;
 			font-weight: normal;
@@ -98,8 +98,8 @@ html{background-color: #F9F9F9; max-width: 1600px;	margin: 0 auto!important;}
 		.popup-close:hover{opacity: 1;}
 		.event-type-circle{margin: 0 5px 2px; display: inline-block; vertical-align: middle; width: 6px; height: 6px; border: 1px solid #7B7777; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%;}
 			.page-text-bold{font-weight: bold;}
-	.popup-part {display: inline-block;	width: 30%;	vertical-align: top;}
-		.popup-part._right{width: 65%;}
+	.popup-part {display: inline-block;	width: 30%;	vertical-align: top; color: #969393;}
+		.popup-part._right{width: 65%; color: #454545;}
 
 /*text styles*/
 	.page-caption{margin: 20px 0; font-size: 40px; color: #444; text-align: center;}
