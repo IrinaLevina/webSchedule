@@ -1,0 +1,3 @@
+@media (max-width: 650px) {
+	.page-line__item{display: block!important; margin: 20px 5px!important;}
+}

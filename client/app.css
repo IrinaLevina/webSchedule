@@ -54,7 +54,7 @@ html{background-color: #F9F9F9; max-width: 1600px;	margin: 0 auto!important;}
 				-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
 				box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);}
 			.page-popup-content h4{padding: 0 0 20px 5px; font-size: 25px; font-weight: bold;}
-			.page-popup-content p{padding: 4px 5px;margin: 5px 0;display: block; font-size: 18px;line-height: 27px;background-color: rgba(242, 248, 252, 1); width: 100%;}
+			.page-popup-content p{padding: 4px 5px;margin: 5px 0;display: block; font-size: 18px;line-height: 27px; width: 100%;}
 				.page-popup._show .page-popup-content{margin: 0 auto 0;}
 		.default-button{text-transform: uppercase;border: 1px solid transparent;border-right: none;border-bottom: none;color: #fff;background-color: #2196f3;border-color: transparent;
 			font-weight: normal;
@@ -172,7 +172,7 @@ html{background-color: #F9F9F9; max-width: 1600px;	margin: 0 auto!important;}
 		-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
 		-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;}
-	.page-form.page-select{margin: 0;}
+	.page-form.page-select{margin: 0; background: url(/images/title-arrow.png) right 8px no-repeat; -webkit-background-size: 25px; background-size: 25px;}
 	.page-form.teacher-input{margin: 0;}
 	.type-filter{ width: 30%; min-width: 200px; max-width: 500px;}
 	.dropdown dd, .dropdown dt {margin:0;padding:0;}
@@ -217,13 +217,11 @@ html{background-color: #F9F9F9; max-width: 1600px;	margin: 0 auto!important;}
 			box-sizing: border-box;
 		}
 		input[type="checkbox"]:checked:after{background-color: #2196f3;	border-color: #2196f3;}
-	.teacher-filter {margin: 0 20px; display: inline-block;vertical-align: top;}
-	.type-filter {margin: 0 20px; display: inline-block;vertical-align: top;}
-	.filter-wrapper {
-		margin: 0 0 30px;
-		display: block;
-	}
-	.clearfix {clear: both; float: none;}
+	.page-line__item{display: inline-block;vertical-align: top;}
+		.teacher-filter {margin: 0 20px;}
+		.type-filter {margin: 0 20px;}
+		.filter-wrapper {margin: 0 0 30px;display: block;}
+		.clearfix {clear: both; float: none;}
 
 	.filter-button {display: inline-block;vertical-align: top;margin: 0 20px;padding: 6px 15px;height: 37px;font-size: 14px;color: #666;background-color: #fff;border-color: #eee;border-right: none;border-bottom: none;border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
 		-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);

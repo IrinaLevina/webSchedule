@@ -1,20 +1,21 @@
 <template name="eventsOfGroup">
+	{{#if isInRole 'admin'}}
+	<div class="page-popup event-popup admin" hidden></div>
+	{{else}}
 	<div class="page-popup event-popup" hidden></div>
+	{{/if}}
 	<div class="page-caption">Календарь событий</div>
 		<!--{{#each events}}-->
 			<!--{{event_name}}-->
 		<!--{{/each}}-->
-		<!-- {{#if isInRole 'admin'}}
-			<h2>Вопрос решен</h2>
-		{{/if}} -->
     <div class="filter-wrapper">
-        <div class="teacher-filter">
+        <div class="teacher-filter page-line__item">
             <!--<input type="text" class="" placeholder="Преподаватель"/>-->
             <input class="form-control typeahead teacher-input page-form" type="text" placeholder="Преподаватель" autocomplete="off" spellcheck="off" data-source="teachers"/>
         </div>
 
 
-        <div class="type-filter">
+        <div class="type-filter page-line__item">
             <dl class="dropdown">
                 <dt>
                 <a href="#" class="page-form page-select">
@@ -47,7 +48,7 @@
 
             </dl>
         </div>
-        <div class="filter-button filter-btn fc-button">ИСКАТЬ</div>
+        <div class="filter-button filter-btn fc-button page-line__item">ИСКАТЬ</div>
     </div>
     <div class="clearfix"></div>
 	<div class="calendar-wrapper">
