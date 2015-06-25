@@ -186,7 +186,7 @@ html.hidden{overflow: hidden;}
 		-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
 		-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;}
-	.page-popup-content input, .page-popup-content select.event_type{border: none; font-size: 16px;line-height: 1.846;color: #666;
+	.page-popup-content input, .page-popup-content select{border: none; font-size: 16px;line-height: 1.846;color: #666;
 		-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
 		-webkit-appearance: none;
 		-webkit-box-shadow: inset 0 -1px 0 #dddddd;
@@ -200,13 +200,10 @@ html.hidden{overflow: hidden;}
 		box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 		-webkit-box-shadow: inset 0 -2px 0 #2196f3;
 		box-shadow: inset 0 -2px 0 #2196f3;}
-	select.event_type{width: 100%; background: url(/images/title-arrow.png) right 8px no-repeat; -webkit-background-size: 25px; background-size: 25px;   font-weight: bold;cursor: pointer;}
-	select.event_type option{padding: 5px 0;margin: 5px 0; cursor: pointer;}
+	.page-popup-content select{width: 100%; background: url(/images/title-arrow.png) right 8px no-repeat; -webkit-background-size: 25px; background-size: 25px;   font-weight: bold;cursor: pointer;}
+	.page-popup-content select option{padding: 5px 0;margin: 5px 0; cursor: pointer;}
 	.page-form.page-select{margin: 0; background: url(/images/title-arrow.png) right 8px no-repeat; -webkit-background-size: 25px; background-size: 25px;}
-	.page-form.teacher-input{margin: 0;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;}
+	.page-form.teacher-input{margin: 0;	-webkit-box-sizing: border-box;	-moz-box-sizing: border-box;box-sizing: border-box;}
 	.popup-btns{cursor: pointer;}
 	.type-filter{ width: 30%; min-width: 200px; max-width: 500px;}
 	.dropdown dd, .dropdown dt {margin:0;padding:0;}
