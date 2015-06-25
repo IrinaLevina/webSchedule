@@ -3,6 +3,10 @@ Meteor.publish('faculties', function() {
   return Faculties.find();
 });
 
+Meteor.publish('notifications', function() {
+  return Notifications.find();
+});
+
 Meteor.publish('courses', function() {
   return Courses.find();
 });
@@ -31,6 +35,16 @@ if(Meteor.is_server) {
     }
   });
 
+  Notifications.allow({
+    update: function(userId, doc, fieldNames) {
+        return ownsDocument(userId, doc) &&
+          fieldNames.length === 1 && fieldNames[0] === 'read';
+      },
+    insert: function(userId, doc, fieldNames) {
+        return ownsDocument(userId, doc) &&
+          fieldNames.length === 1 && fieldNames[0] === 'read';
+
+      }
+    });
+
 }
-
-
