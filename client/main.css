@@ -84,4 +84,9 @@ h2 {
 .tt-suggestion {
     cursor: pointer;
 }
+.popup-btns {
+    float: right;
+    height: 30px;
+    margin: 5px;
+}
 /*end admin form*/
