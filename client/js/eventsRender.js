@@ -151,6 +151,9 @@ Template.eventsOfGroup.events({
 	'click .close-button': function(e){
 		hideEventInfo();
 	},
+	'click .event-popup-before': function(e){
+		hideEventInfo();
+	},
     'click .edit-info-btn': function(e){
         Events.update($('.page-popup-content').attr('data-id'),{$set: {
             /*group_id: $('.groups-id').val(),
@@ -184,6 +187,7 @@ Template.eventsOfGroup.events({
 
 function showEventInfo(eventInfo) {
 //    popup here
+	$('html').addClass('hidden');
 	$(eventInfo).each(function(k,v) {
 		var eventType;
 
@@ -274,6 +278,7 @@ function showEventInfo(eventInfo) {
 
 }
 function hideEventInfo(){
+	$('html').removeClass('hidden');
 	$('.page-popup.event-popup').fadeOut();
 	$('.page-popup-content').remove();
 }

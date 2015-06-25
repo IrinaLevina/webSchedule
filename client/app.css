@@ -1,5 +1,6 @@
 /*global styles*/
 html{background-color: #F9F9F9; max-width: 1600px;	margin: 0 auto!important;}
+html.hidden{overflow: hidden;}
 	body{font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;}
 
 /*calendar*/
@@ -44,7 +45,8 @@ html{background-color: #F9F9F9; max-width: 1600px;	margin: 0 auto!important;}
 	/*popup event*/
 	.page-popup{position: fixed; width: 100%; height: 100%; background: rgba(26, 26, 26, 0.6); z-index: 10; top: 0; left: 0;font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #666;}
 		.page-popup.event-popup{color: #454545;}
-			.page-popup-content{margin: 10% auto 0;padding: 20px 20px;width: 50%;min-width: 700px;max-width: 1000px;background-color: #fff; border-radius: 3px;
+		.event-popup-before{position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer; z-index: 10;}
+			.page-popup-content{position: absolute; left: 0; right: 0; min-width: 650px; margin: 10% auto 0;padding: 20px 20px;width: 50%;max-width: 1000px;background-color: #fff; border-radius: 3px;z-index: 11;
 				border: 1px solid transparent;
 				-webkit-transition: all .3s;
 				-moz-transition: all .3s;
@@ -173,7 +175,10 @@ html{background-color: #F9F9F9; max-width: 1600px;	margin: 0 auto!important;}
 		-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;}
 	.page-form.page-select{margin: 0; background: url(/images/title-arrow.png) right 8px no-repeat; -webkit-background-size: 25px; background-size: 25px;}
-	.page-form.teacher-input{margin: 0;}
+	.page-form.teacher-input{margin: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;}
 	.type-filter{ width: 30%; min-width: 200px; max-width: 500px;}
 	.dropdown dd, .dropdown dt {margin:0;padding:0;}
 	.dropdown ul {margin: -1px 0 0;}
@@ -246,3 +251,31 @@ html{background-color: #F9F9F9; max-width: 1600px;	margin: 0 auto!important;}
 			-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 			box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);}
 /*end events filter*/
+/*media queries*/
+@media (max-width: 650px) {
+	.page-line__item{display: block!important; margin: 20px auto!important; max-width: 500px; min-width: 200px;}
+	.fc-button.page-line__item{text-align: center;}
+	.type-filter{width: 100%;}
+	.page-form.teacher-input{width: 100%;}
+	.twitter-typeahead{width: 100%;}
+	.fc-header-left {display: block;width: 45%;float: left;text-align: center; margin-bottom: 40px;}
+	.fc-header-center {display: block;width: 100%;position: absolute;margin: 45px 0 0;}
+	.fc-header-right {display: block;width: 45%;float: right;text-align: center; margin-bottom: 40px;}
+	.fc-button-today{width: 30%; text-align: center;}
+	.fc-button-next, .fc-button-prev{width: 14%;}
+	.fc-button-month, .fc-button-agendaDay{width: 30%;}
+	.fc .fc-header-space{padding-left: 5px;}
+	.page-popup-content{width: 100%; min-width: 250px; padding: 10px; max-height: 80%;overflow-y: scroll;	-webkit-box-sizing: border-box;	-moz-box-sizing: border-box;box-sizing: border-box;}
+	.calendar-wrapper{margin: 0; width: 100%;}
+}
+@media (max-width: 500px) {
+	.event-for-week{padding: 5px 0;	-webkit-box-sizing: border-box;	-moz-box-sizing: border-box;box-sizing: border-box;font-size: 9px;		line-height: 11px;}
+	.fc-day{-webkit-box-sizing: border-box;	-moz-box-sizing: border-box;box-sizing: border-box;}
+	.popup-part{width: 90%;}
+	.popup-part._right{width: 90%;}
+
+}
+@media (max-width: 400px) {
+	.fc-button-today{padding-left: 3px;padding-right: 22px;}
+	.fc-button-next, .fc-button-prev{width: 7%;}
+}
