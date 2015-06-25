@@ -6,12 +6,22 @@ var currentGroup;
 Template.eventsOfGroup.rendered = function() {
      Meteor.typeahead.inject();
      countEventsDate("month");
+
      setTimeout(function(){
          currentGroup = Router.current().data().fetch()[0].group_id;
          $(".fc-button-month").click();
+         var notificationsList = Notifications.find({groupID: currentGroup}).fetch();
+         showNotifications(notificationsList)
      }, 500);
+
      multyselect();
 };
+
+function showNotifications (notList){
+    $(notList).each(function(k,v){
+        alert("new event for you "+ v.nameEvent)
+    })
+}
 
 Template.eventsOfGroup.events({
     'click .fc-button': function() {
@@ -216,7 +226,7 @@ function showEventInfo(eventInfo) {
                 '<span class="popup-part">Место проведения: </span><input class="popup-part _right event-place page-text-bold" value="' + v.event_place + '"/></p>' +
                 '<p><span class="popup-part">Описание: </span><input class="popup-part _right event_summary page-text-bold" value="' + v.event_summury + '"/></p>' +
                 '<p><span class="popup-part">Тип: </span><span class="popup-part _right page-text-bold">' +
-                '<select class="event_type">';
+                '<select class="event-type">';
 
                 adminPopup+= '<option value="1" ';
                 if (v.event_type==1){

@@ -41,3 +41,9 @@ if (Meteor.isClient) {
   });
 }
 
+Meteor.methods({
+    'sendLogMessage': function(){
+        console.log("Hello world");
+    }
+});
+

@@ -1,8 +1,6 @@
 /* var users = [
-/*      {name:"Normal User",email:"normal@example.com",roles:[]},
-      {name:"View-Secrets User",email:"view@example.com",roles:['view-secrets']},
-      {name:"Manage-Users User",email:"manage@example.com",roles:['manage-users']},*/
- /*     {name:"Admin User",email:"admin@admin.com",roles:['admin']}
+
+      {name:"Admin User",email:"admin@admin.com",roles:['admin']}
     ];
 
   _.each(users, function (user) {
@@ -10,7 +8,7 @@
 
     id = Accounts.createUser({
       email: user.email,
-      password: "admin1",
+      password: "apple1",
       profile: { name: user.name }
     });
 
@@ -20,4 +18,4 @@
       Roles.addUsersToRoles(id, user.roles);
     }
 
-  });*/
+  });
