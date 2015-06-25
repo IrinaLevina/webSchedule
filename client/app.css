@@ -58,7 +58,7 @@ html.hidden{overflow: hidden;}
 			.page-popup-content h4{padding: 0 0 20px 5px; font-size: 25px; font-weight: bold;}
 			.page-popup-content p{padding: 4px 5px;margin: 5px 0;display: block; font-size: 18px;line-height: 27px; width: 100%;}
 				.page-popup._show .page-popup-content{margin: 0 auto 0;}
-		.default-button{text-transform: uppercase;border: 1px solid transparent;border-right: none;border-bottom: none;color: #fff;background-color: #2196f3;border-color: transparent;
+		.default-button, #login-buttons .login-button, .accounts-dialog .login-button{text-transform: uppercase;border: 1px solid transparent;border-right: none;border-bottom: none;color: #fff;background-color: #2196f3;border-color: transparent;
 			font-weight: normal;
 			text-align: center;
 			vertical-align: middle;
@@ -81,8 +81,8 @@ html.hidden{overflow: hidden;}
 			-webkit-transition: all 0.2s;
 			-o-transition: all 0.2s;
 			transition: all 0.2s;}
-				.default-button:hover{  background-color: #0d87e9;}
-				.default-button:active {outline: 0;
+				.default-button:hover, #login-buttons .login-button:hover, .accounts-dialog .login-button:hover{  background-color: #0d87e9;}
+				.default-button:active, #login-buttons .login-button:active, .accounts-dialog .login-button:active {outline: 0;
 					background-image: none;
 					-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 					box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -108,7 +108,7 @@ html.hidden{overflow: hidden;}
 
 /*select params styles*/
 	.page-wrapper__link{font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 0; line-height: 0; width: 100%; text-align: center; position: relative;}
-	.main-link__i{width: 23%; max-width: 300px; min-width: 180px; margin: 2%;height: 160px;	padding: 0 10px; display: inline-block; text-transform: uppercase; vertical-align: top; text-align: center; font-size: 20px; line-height: 26px; text-decoration: none;color: #666;
+	.main-link__i, .login-link-text{width: 23%; max-width: 300px; min-width: 180px; margin: 2%;height: 160px;	padding: 0 10px; display: inline-block; text-transform: uppercase; vertical-align: top; text-align: center; font-size: 20px; line-height: 26px; text-decoration: none!important;color: #666;
 		border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
 		border-right: none;
 		border-bottom: none;
@@ -128,9 +128,9 @@ html.hidden{overflow: hidden;}
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;}
-	.main-link__i:hover, .main-link__i:active:hover, .main-link__i:focus {background-color: #f0f0f0; text-decoration: none;}
-	.main-link__i:hover {color: #666;	background-color: #f3f3f3;border-color: #cfcfcf;font-size: 21px;}
-	.main-link__i:active {background-color: #f0f0f0;
+	.main-link__i:hover, .main-link__i:active:hover, .main-link__i:focus, .login-link-text:hover, .login-link-text:active:hover, .login-link-text:focus {background-color: #f0f0f0; text-decoration: none;}
+	.main-link__i:hover, .login-link-text:hover {color: #666;	background-color: #f3f3f3;border-color: #cfcfcf;font-size: 21px;}
+	.main-link__i:active, .login-link-text:active {background-color: #f0f0f0;
 		background-image: -webkit-radial-gradient(circle, #f0f0f0 10%, #ffffff 11%);
 		background-image: -o-radial-gradient(circle, #f0f0f0 10%, #ffffff 11%);
 		background-image: radial-gradient(circle, #f0f0f0 10%, #ffffff 11%);
@@ -144,7 +144,9 @@ html.hidden{overflow: hidden;}
 	.link-name_layer {height: 100%;text-align: center;}
 		.link-name_layer p {display: inline-block;	vertical-align: middle;}
 		.link-name_layer:before { content: "";display: inline-block;min-height: inherit;height: 100%;vertical-align: middle;}
-
+	#login-buttons{width: 100%; text-align: center;}
+		.login-link-text{line-height: 160px;}
+		#login-dropdown-list{left: 0; right: 0; margin: 0 auto;}
 
 	.page-search{padding: 4px 30px; margin: 50px auto;  width: 30%; min-width: 100px; max-width: 500px;display: block; border: none; font-size: 16px;line-height: 1.846;color: #666;
 		background: url(/images/search-icon.png) 0 10px no-repeat;
@@ -157,7 +159,7 @@ html.hidden{overflow: hidden;}
 		-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	}
-	.page-search:focus, .page-form:focus{	border-color: #66afe9;	outline: 0;
+	.page-search:focus, .page-form:focus, #login-buttons input[type=text]:focus, .accounts-dialog input[type=text]:focus, #login-buttons input[type=email]:focus, .accounts-dialog input[type=email]:focus, #login-buttons input[type=password]:focus, .accounts-dialog input[type=password]:focus{	border-color: #66afe9;	outline: 0;
 		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 		box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 		-webkit-box-shadow: inset 0 -2px 0 #2196f3;
@@ -165,7 +167,7 @@ html.hidden{overflow: hidden;}
 
 
     /*events filter*/
-	.page-form{padding: 4px 5px; margin: 0 20px; /*width: 30%;*/ width: inherit; min-width: 200px; max-width: 500px;display: block; border: none; font-size: 16px;line-height: 1.846;color: #666;
+	.page-form, #login-buttons input[type=text], .accounts-dialog input[type=text], #login-buttons input[type=email], .accounts-dialog input[type=email], #login-buttons input[type=password], .accounts-dialog input[type=password]{padding: 4px 5px; margin: 0 20px; /*width: 30%;*/ width: inherit; min-width: 200px; max-width: 500px;display: block; border: none; font-size: 16px;line-height: 1.846;color: #666;
 		-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
 		-webkit-appearance: none;
 		-webkit-box-shadow: inset 0 -1px 0 #dddddd;
@@ -251,6 +253,16 @@ html.hidden{overflow: hidden;}
 			-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 			box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);}
 /*end events filter*/
+
+/*admin pages*/
+	.accounts-dialog *{margin: 13px 0;}
+		#login-buttons{font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #666;}
+			#login-buttons .login-close-text{float: right; text-decoration: none;}
+				#login-buttons .login-close-text:hover, #login-buttons a:hover, .accounts-dialog a:hover{opacity: .8; text-decoration: none;}
+			#login-buttons a, .accounts-dialog a{text-decoration: none;}
+		.accounts-dialog label, .accounts-dialog .title{font-size: 100%; color: rgba(136, 157, 174, 0.62);}
+/*end admin pages*/
+
 /*media queries*/
 @media (max-width: 650px) {
 	.page-line__item{display: block!important; margin: 20px auto!important; max-width: 500px; min-width: 200px;}
