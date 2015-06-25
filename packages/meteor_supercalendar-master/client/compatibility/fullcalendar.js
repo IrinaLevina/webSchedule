@@ -401,11 +401,12 @@ function Calendar(element, options, eventSources) {
 			}
 			currentView.sizeDirty = false;
 			currentView.eventsDirty = false;
+            header.updateTitle(currentView.title);
 			updateEvents(forceEventRender);
 			
 			elementOuterWidth = element.outerWidth();
 			
-			header.updateTitle(currentView.title);
+
 			var today = new Date();
 			if (today >= currentView.start && today < currentView.end) {
 				header.disableButton('today');
