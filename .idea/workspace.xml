@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="534ed8a6-b6f5-4b29-83a4-bbf8f07d48ef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/eventInfo.js" afterPath="$PROJECT_DIR$/client/js/eventInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/js/eventsRender.js" afterPath="$PROJECT_DIR$/client/js/eventsRender.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/events_of_groups.html" afterPath="$PROJECT_DIR$/client/templates/events_of_groups.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.css" afterPath="$PROJECT_DIR$/client/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/meteor_supercalendar-master/client/compatibility/fullcalendar.js" afterPath="$PROJECT_DIR$/packages/meteor_supercalendar-master/client/compatibility/fullcalendar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webSchedule.iws" />
@@ -29,13 +26,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="eventsRender.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="eventsRender.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/eventsRender.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.3141994" vertical-offset="1275" max-vertical-offset="4896">
-              <caret line="246" column="48" selection-start-line="246" selection-start-column="48" selection-end-line="246" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="4896">
+              <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
               <folding>
                 <marker date="1435214889283" expanded="false" signature="2842:2859" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fullcalendar.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/packages/meteor_supercalendar-master/client/compatibility/fullcalendar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.54334366" vertical-offset="6432" max-vertical-offset="99943">
+              <caret line="403" column="50" selection-start-line="403" selection-start-column="50" selection-end-line="403" selection-end-column="50" />
+              <folding>
+                <marker date="1435215398659" expanded="false" signature="5723:5740" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="15813:15823" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="49216:49256" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="50425:50435" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="52474:52491" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="64360:64405" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="64514:64554" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="64616:64626" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="64830:64847" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="65374:65436" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="65509:65553" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="65636:65676" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="65763:65773" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="66278:66295" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="67497:67507" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="69493:69510" placeholder="..." />
+                <marker date="1435215398659" expanded="false" signature="142592:142619" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -149,7 +174,6 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/packages/meteor_supercalendar-master/client/stylesheets/fullcalendar.css" />
         <option value="$PROJECT_DIR$/packages/meteor_supercalendar-master/client/stylesheets/calendar.less" />
-        <option value="$PROJECT_DIR$/packages/meteor_supercalendar-master/client/compatibility/fullcalendar.js" />
         <option value="$PROJECT_DIR$/client/app.css" />
         <option value="$PROJECT_DIR$/lib/router.js" />
         <option value="$PROJECT_DIR$/client/templates/adminPage.html" />
@@ -157,6 +181,7 @@
         <option value="$PROJECT_DIR$/client/main.css" />
         <option value="$PROJECT_DIR$/client/js/eventInfo.js" />
         <option value="$PROJECT_DIR$/client/js/eventsRender.js" />
+        <option value="$PROJECT_DIR$/packages/meteor_supercalendar-master/client/compatibility/fullcalendar.js" />
       </list>
     </option>
   </component>
@@ -222,6 +247,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webSchedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webSchedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor_supercalendar-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webSchedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webSchedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor_supercalendar-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webSchedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webSchedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor_supercalendar-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="compatibility" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -653,13 +744,18 @@
       <created>1435007187214</created>
       <updated>1435007187214</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="events view&#10;&#10;add users block&#10;add admin role&#10;add admin scenario for events view">
+      <created>1435215144891</created>
+      <updated>1435215144891</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31955922" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -675,7 +771,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -721,7 +816,8 @@
     <MESSAGE value="events view&#10;&#10;add output events on month and days views" />
     <MESSAGE value="events view&#10;&#10;add type of events on month and days views" />
     <MESSAGE value="events view&#10;&#10;change style of calendar" />
-    <option name="LAST_COMMIT_MESSAGE" value="events view&#10;&#10;change style of calendar" />
+    <MESSAGE value="events view&#10;&#10;add users block&#10;add admin role&#10;add admin scenario for events view" />
+    <option name="LAST_COMMIT_MESSAGE" value="events view&#10;&#10;add users block&#10;add admin role&#10;add admin scenario for events view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -872,14 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57253885" vertical-offset="0" max-vertical-offset="386">
           <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/meteor_supercalendar-master/client/compatibility/fullcalendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9153318" vertical-offset="29418" max-vertical-offset="99926">
-          <caret line="1758" column="12" selection-start-line="1758" selection-start-column="12" selection-end-line="1758" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,10 +1188,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/eventsRender.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.3141994" vertical-offset="1275" max-vertical-offset="4896">
-          <caret line="246" column="48" selection-start-line="246" selection-start-column="48" selection-end-line="246" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="4896">
+          <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
           <folding>
             <marker date="1435214889283" expanded="false" signature="2842:2859" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/meteor_supercalendar-master/client/compatibility/fullcalendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54334366" vertical-offset="6432" max-vertical-offset="99943">
+          <caret line="403" column="50" selection-start-line="403" selection-start-column="50" selection-end-line="403" selection-end-column="50" />
+          <folding>
+            <marker date="1435215398659" expanded="false" signature="5723:5740" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="15813:15823" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="49216:49256" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="50425:50435" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="52474:52491" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="64360:64405" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="64514:64554" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="64616:64626" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="64830:64847" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="65374:65436" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="65509:65553" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="65636:65676" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="65763:65773" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="66278:66295" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="67497:67507" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="69493:69510" placeholder="..." />
+            <marker date="1435215398659" expanded="false" signature="142592:142619" placeholder="..." />
           </folding>
         </state>
       </provider>
